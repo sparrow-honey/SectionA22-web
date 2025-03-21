@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE/AIML</title>
+    <link rel="stylesheet" href="stream.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <ul class="navlist">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="/stream.html">MATERIALS</a></li>
+        </ul>
+        <div class="boxlogo" id="menu"><i class="ri-menu-line"></i></div>
+    </nav>
+    <section>
+       
+        <div class="box">
+            <h3>CSE/AIML</h3>
+            <div class="boxes"><a href="study.html">CSE </a></div>
+            <div class="boxes"><a href="studyaiml.html">AIML</a></div>
+            <!-- <div class="boxes"><a href="materials/notes/subnotes.html">Notes</a></div> -->
+            <!-- <div class="boxes"><a href="ass01.html">Assignments </a></div>
+            <div class="boxes"><a href="pr01.html">Practicals</a></div> -->
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal">
+        const sr = ScrollReveal({
+           distance :'65px',
+           duration :2600,
+           delay:450,
+           reset :true
+       });
+       sr.reveal('introtexts',{delay:200, origin:'top'});
+   </script>
+   <script>
+       
+       let menu = document.querySelector('#menu');
+       let navlist =document.querySelector('.navlist');
+       menu.onclick = ()=>{
+           menu.classList.toggle('bx-x');
+           navlist.classList.toggle('open');
+       }
+      
+   </script>
+    
+</body>
+</html>
